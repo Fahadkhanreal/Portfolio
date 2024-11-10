@@ -1,8 +1,9 @@
 import React from 'react'
+import "../app/styles/footer.css"
 
 const Footer = () => {
   return (
-    <div className='mt-16 py-6 text-center bg-accent text-xl'>
+    <div className='footer'>
 Fahad   |   All rights reserved 2024.
     </div>
   )

@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import "../app/styles/card.css"
 
 
 interface propsType {
@@ -14,10 +15,10 @@ const Card:React.FC<propsType> = ({title, desc, img, tags,url}) => {
   return (
 <>
 <a href={url} target='_blank' rel='noopener noreferrer' className='block'>
-  <div className= 'border border-accent w-full  sm:w-[350px] md:w-[300px] lg:w-[350px] xl:w-[400px] mx-auto'data-aos="fade-up"
+  <div className={`card-image ${window.innerWidth >= 640 ? 'card-image-sm' : ''}`}data-aos="fade-up"
     data-aos-anchor-placement="top-bottom">
       <div>
-        <Image className='w-full h-auto'
+        <Image className={`card-image ${window.innerWidth >= 640 ? 'card-image-sm' : ''}`}
         src={img}
         width={350}
         height={350}
@@ -25,12 +26,12 @@ const Card:React.FC<propsType> = ({title, desc, img, tags,url}) => {
         />
       </div>
      
-      <div className='p-4 space-y-4'>
-        <div className='text-xl sm:text-2xl md:text-3xl font-extralight'>{title}</div>
+      <div className='card-content'>
+        <div className='card-title'>{title}</div>
         <div>{desc}</div>
-        <div className='flex flex-wrap gap-2'>
+        <div>
           {tags.map((el)=> (
-            <div className='tags bg-gray-200 text-sm rounded px-2 py-1' key={el}>
+            <div className='card-tags' key={el}>
                {el}
             </div>))}
         </div>
