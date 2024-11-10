@@ -7,7 +7,7 @@ const Skills = () => {
          <div data-aos="fade-up"
      data-aos-anchor-placement="top-bottom">
             <h2 className='text-4xl md:text-5xl'>Technologiess I work with</h2>
-            <p className='text-gray-500 pt-2 text-xl'>I have a solid foundation in web development, specializing in HTML,CSS and Javascript.My experience extends to usinf frameworks like React and Next.js to create dynamic and user-friendly applications . I'm also proficient in Tailwind CSS for efficient styling and design,with a passion for learning , I saty updated on the latest technologies to enhance my skill and contribute effectively to projects</p>
+            <p className='text-gray-500 pt-2 text-xl'>I have a solid foundation in web development, specializing in HTML,CSS and Javascript.My experience extends to usinf frameworks like React and Next.js to create dynamic and user-friendly applications . Im also proficient in Tailwind CSS for efficient styling and design,with a passion for learning , I stay updated on the latest technologies to enhance my skill and contribute effectively to projects</p>
             </div>   
             <div>
                 <div className='grid grid-cols-2 text-accent text-3xl sm:text-4xl'>
@@ -37,3 +37,6 @@ const Skills = () => {
 }
 
 export default Skills
+
+
+

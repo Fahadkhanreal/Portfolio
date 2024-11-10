@@ -1,7 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import Heading from './Heading';
-import { url } from 'inspector';
+
 
 interface propsType {
   title:string;
